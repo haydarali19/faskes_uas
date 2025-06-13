@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('kabkotas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 100);
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
+            $table->unsignedBigInteger('provinsi_id');
             $table->timestamps();
+
+            $table->foreign('provinsi_id')->references('id')->on('provinsis')->onDelete('cascade');
         });
     }
 
@@ -22,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kabkotas');
+        Schema::dropIfExists('kabkota');
     }
 };

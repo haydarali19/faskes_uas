@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('provinsis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 45);
+            $table->string('ibukota', 45);
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
             $table->timestamps();
         });
     }
