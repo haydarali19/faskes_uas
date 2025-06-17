@@ -59,27 +59,11 @@
           <ul>
             <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Layanan</a></li>
             <li><a href="#doctors">Doctors</a></li>
             <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Dashboard</a></li>
 
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -101,9 +85,9 @@
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>WELCOME TO VetPaw Clinicccc</h2>
-          <p> klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
-           <p>terbaik dengan layanan profesional dan penuh kasih.</p>
+          <h2>WELCOME TO VetPaw Clinic</h2>
+          <p>klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
+          <p>terbaik dengan layanan profesional dan penuh kasih.</p>
         </div><!-- End Welcome -->
 
         <div class="content row gy-4">
@@ -205,49 +189,13 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-solid fa-user-doctor"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Doctors</p>
-            </div>
-          </div><!-- End Stats Item -->
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-flask"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Research Labs</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-award"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Layanan</h2>
+        <p>Layanan kesehatan hewan terpercaya dengan dukungan dokter ahli dan sarana lengkap</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -260,9 +208,9 @@
                 <i class="fas fa-heartbeat"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Pemeriksaan Kesehatan Rutin</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Layanan pemeriksaan menyeluruh untuk deteksi dini masalah kesehatan hewan peliharaan Anda</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -272,9 +220,9 @@
                 <i class="fas fa-pills"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Vaksinasi & Imunisasi</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Memberikan vaksin lengkap sesuai usia dan jenis hewan guna mencegah berbagai penyakit menular dan berbahaya</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -284,9 +232,9 @@
                 <i class="fas fa-hospital-user"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Penanganan Gawat Darurat</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Layanan darurat 24/7 untuk kondisi serius seperti kecelakaan atau keracunan</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -296,9 +244,9 @@
                 <i class="fas fa-dna"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+                <h3>Perawatan Gigi & Kuku</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Membersihkan gigi, pemotongan kuku, dan perawatan kebersihan lainnya agar tetap sehat dan nyaman</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -309,9 +257,9 @@
                 <i class="fas fa-wheelchair"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+                <h3>Operasi & Bedah</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Prosedur medis dari yang ringan hingga kompleks, ditangani secara profesional dan steril</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -322,9 +270,9 @@
                 <i class="fas fa-notes-medical"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+                <h3>Konsultasi Nutrisi & Gizi</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Bantu Anda memilih makanan dan pola makan yang tepat untuk hewan peliharaan Anda</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -386,7 +334,7 @@
               <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Aurora Zalfa Hartono</h4>
-                <span></span>
+                <span>0110224057</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -401,8 +349,7 @@
               <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Rumaisha</h4>
-                <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <span>0110224087</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -418,7 +365,6 @@
               <div class="member-info">
                 <h4>M Faqih Rayya</h4>
                 <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -895,10 +841,6 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
