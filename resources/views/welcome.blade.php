@@ -16,8 +16,7 @@
 <!-- Script -->
 <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-<!-- Gambar -->
-<img src="{{ asset('assets/img/logo.png') }}" alt="Logo">
+
 
   <!-- =======================================================
   * Template Name: Medilab
@@ -52,8 +51,8 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="{{ asset('medilab/assets/img/logo.png') }}" alt="Logo">
-          <h1 class="sitename">Medilab</h1>
+         <img src="{{ asset('assets/img/logo.png') }}" alt="Logo">
+          <h1 class="sitename">VetPaw Clinic</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -83,8 +82,9 @@
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>WELCOME TO MEDILAB</h2>
-          <p>We are team of talented designers making websites with Bootstrap</p>
+          <h2>WELCOME TO VetPaw Clinic</h2>
+          <p> klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
+           <p>terbaik dengan layanan profesional dan penuh kasih.</p>
         </div><!-- End Welcome -->
 
         <div class="content row gy-4">
