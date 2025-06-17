@@ -82,7 +82,7 @@
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>WELCOME TO VetPaw Clinic</h2>
+          <h2>WELCOME TO VetPaw Clinicccc</h2>
           <p> klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
            <p>terbaik dengan layanan profesional dan penuh kasih.</p>
         </div><!-- End Welcome -->
