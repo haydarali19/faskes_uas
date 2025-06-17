@@ -51,44 +51,24 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="{{ asset('assets/img/logo.png') }}" alt="Logo">
+         <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" style="height: 200px !important; width: auto !important;">
           <h1 class="sitename">VetPaw Clinic</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Dashboard</a></li>
-
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
+  <ul>
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="/admin" class="btn btn-primary text-white px-3 py-2 rounded">Dashboard</a>
+    </li>
+  </ul>
+</nav>
       </div>
-
     </div>
-
   </header>
 
   <main class="main">
@@ -101,7 +81,7 @@
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>WELCOME TO VetPaw Clinicccc</h2>
+          <h2>Welcome To VetPaw Clinc</h2>
           <p> klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
            <p>terbaik dengan layanan profesional dan penuh kasih.</p>
         </div><!-- End Welcome -->
@@ -170,30 +150,32 @@
           </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>About Us</h3>
+            <h3>About VetPaw Clinic</h3>
             <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+              VetPaw Clinic adalah klinik hewan yang didedikasikan khusus untuk kesehatan anjing dan kucing. Dengan dokter hewan berpengalaman, fasilitas modern, serta pendekatan penuh kasih sayang, kami berkomitmen memberikan pelayanan terbaik untuk sahabat berbulu Anda.
+
+Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena itu, kami hadir untuk membantu menjaga mereka tetap sehat, aktif, dan bahagia—mulai dari vaksinasi, perawatan rutin, hingga penanganan medis lanjutan.
             </p>
             <ul>
               <li>
                 <i class="fa-solid fa-vial-circle-check"></i>
                 <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                  <h5>Pelayanan Profesional & Ramah</h5>
+                  <p>Tim dokter dan perawat hewan yang berpengalaman dan peduli.</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-pump-medical"></i>
                 <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                  <h5>Fasilitas Lengkap & Bersih</h5>
+                  <p>Klinik dilengkapi dengan ruang rawat, lab, dan peralatan modern.</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-heart-circle-xmark"></i>
                 <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                  <h5>Fokus pada Anjing & Kucing</h5>
+                  <p>Perawatan yang disesuaikan dengan kebutuhan unik dua spesies ini.</p>
                 </div>
               </li>
             </ul>
@@ -233,6 +215,15 @@
               <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
               <p>Awards</p>
             </div>
+          </div><!-- End Stats Item -->
+         <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+  <i class="fas fa-paw"></i>
+  <div class="stats-item">
+    <span data-purecounter-start="0" data-purecounter-end="2400" data-purecounter-duration="1" class="purecounter"></span>
+    <p>Treated Pets</p>
+  </div>
+</div>
+
           </div><!-- End Stats Item -->
 
         </div>
@@ -440,7 +431,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Kami menerima banyak pertanyaan dari para pemilik hewan peliharaan. Berikut adalah beberapa yang paling sering ditanyakan.
+
+</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -452,49 +445,51 @@
             <div class="faq-container">
 
               <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>❓ Apakah saya perlu membuat janji sebelum datang?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Ya, sangat disarankan untuk membuat janji terlebih dahulu agar kami bisa mengatur waktu pemeriksaan dengan baik dan meminimalkan waktu tunggu.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <h3>❓ Apakah VetPaw Clinic menerima keadaan darurat?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Kami menangani kasus darurat selama jam operasional. Untuk kasus mendesak di luar jam buka, silakan hubungi kontak darurat kami yang tersedia di halaman kontak.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>❓ Apakah kalian menyediakan layanan vaksinasi?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Tentu! Kami menyediakan layanan vaksinasi lengkap untuk anjing dan kucing sesuai usia dan kebutuhan kesehatannya.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <h3>❓ Apakah tersedia layanan konsultasi nutrisi dan perawatan hewan?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Ya, dokter kami siap memberikan panduan nutrisi dan perawatan khusus untuk menjaga kesehatan hewan peliharaan Anda.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <h3>❓ Berapa biaya rata-rata untuk konsultasi di klinik ini?</h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>Biaya konsultasi mulai dari Rp75.000 dan dapat bervariasi tergantung pada jenis layanan tambahan yang dibutuhkan.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <h3>❓ Apakah saya bisa membeli obat atau vitamin langsung di klinik?</h3>
                 <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                  <p>Ya, VetPaw Clinic menyediakan berbagai obat, vitamin, dan suplemen yang direkomendasikan oleh dokter hewan kami. Anda bisa membelinya langsung setelah konsultasi atau pemeriksaan.
+
+</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -745,7 +740,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Jika Anda memiliki pertanyaan, ingin membuat janji, atau membutuhkan bantuan terkait kesehatan hewan peliharaan Anda, jangan ragu untuk menghubungi kami. Tim VetPaw Clinic siap membantu Anda dengan pelayanan terbaik untuk anjing dan kucing kesayangan Anda.</p>
       </div><!-- End Section Title -->
 
       <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
@@ -761,7 +756,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Location</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Margonda Street, Indonesia, Srengseng 12345</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -769,7 +764,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+62 12345678</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -777,7 +772,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>vetpaw@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -829,13 +824,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Medilab</span>
+            <span class="sitename">VetPaw</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Margonda Street</p>
+            <p>Indonesia, Srengseng 12345</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 12345678</span></p>
+            <p><strong>Email:</strong> <span>vetpaw@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -848,52 +843,50 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#services">Vaksinasi Anjing & Kucing</a></li>
+            <li><a href="#services">Pemeriksaan Umum</a></li>
+            <li><a href="#services">Konsultasi Kesehatan Hewan</a></li>
+            <li><a href="#services">Pengobatan & Bedah Ringan</a></li>
+            <li><a href="#services">Pemeriksaan Gigi & Kulit</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
+          <h4>Opening Hours</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
+            <li><a href="#">Senin – Jumat: 08.00 – 20.00</a></li>
+            <li><a href="#">Sabtu: 08.00 – 16.00</a></li>
+            <li><a href="#">Minggu & Tanggal Merah: Libur</a></li>
+            
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
+       <div class="col-lg-2 col-md-3 footer-links">
+  <h4>Artikel & Edukasi</h4>
+  <ul>
+    <li><a href="#">Tips Merawat Anjing</a></li>
+    <li><a href="#">Panduan Vaksinasi Kucing</a></li>
+    <li><a href="#">Nutrisi Hewan Harian</a></li>
+    <li><a href="#">Ciri-Ciri Hewan Sakit</a></li>
+    <li><a href="#">Cara Cek Kesehatan Gigi</a></li>
+  </ul>
+</div>
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">VetPaw Clinic</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
