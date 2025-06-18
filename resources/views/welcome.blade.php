@@ -197,8 +197,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fa-solid fa-user-doctor"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Doctors</p>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Specialist Doctors</p>
             </div>
           </div><!-- End Stats Item -->
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
@@ -212,8 +212,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fas fa-award"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Years of Experience</p>
             </div>
           </div><!-- End Stats Item -->
          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
