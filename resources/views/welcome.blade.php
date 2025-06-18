@@ -91,7 +91,7 @@
         <div class="content row gy-4">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>Why Choose VetPaw Clinic?</h3>
+              <h3>Kenapa VetPaw Clinic?</h3>
               <p>
                 Di VetPaw Clinic, kami percaya bahwa hewan peliharaan adalah anggota keluarga yang berharga. Itulah sebabnya kami menyediakan layanan kesehatan premium dengan harga terjangkau, didukung oleh dokter hewan berpengalaman dan fasilitas kelas dunia. Kami tidak hanya menyembuhkan—kami merawat.
               </p>
@@ -432,7 +432,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
+        <h2>FAQ</h2>
         <p>Kami menerima banyak pertanyaan dari para pemilik hewan peliharaan. Berikut adalah beberapa yang paling sering ditanyakan.
 
 </p>
@@ -516,8 +516,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
           <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
             <h3>Testimonials</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              Kami sangat menghargai setiap masukan dari pengguna kami. Berikut adalah beberapa pengalaman mereka bersama layanan kami.
             </p>
           </div>
 
@@ -625,8 +624,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
                       <div>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
+                        <h3>Aurora Zalfa</h3>
+                        <h4>Data Analyst</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -634,7 +633,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                      <span>Tim dokter di VetPaw Clinic sangat profesional dan sabar dalam menangani anjing saya yang sedang sakit. Mereka menjelaskan detail perawatan dengan jelas, dan harga terjangkau pula! Terima kasih telah menyelamatkan si Kiki!</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
