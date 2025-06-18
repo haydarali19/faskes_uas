@@ -56,17 +56,19 @@
         </a>
 
         <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="#hero" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#doctors">Doctors</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
-      <a href="/admin" class="btn btn-primary text-white px-3 py-2 rounded">Dashboard</a>
-    </li>
-  </ul>
-</nav>
+          <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Dashboard</a></li>
+
+            
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
       </div>
     </div>
   </header>
@@ -81,18 +83,17 @@
       <div class="container position-relative">
 
         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>Welcome To VetPaw Clinc</h2>
-          <p> klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
-           <p>terbaik dengan layanan profesional dan penuh kasih.</p>
+          <h2>WELCOME TO VetPaw Clinic</h2>
+          <p>klinik khusus anjing dan kucing yang siap memberikan perawatan</p>
+          <p>terbaik dengan layanan profesional dan penuh kasih.</p>
         </div><!-- End Welcome -->
 
         <div class="content row gy-4">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>Why Choose Medilab?</h3>
+              <h3>Why Choose VetPaw Clinic?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Di VetPaw Clinic, kami percaya bahwa hewan peliharaan adalah anggota keluarga yang berharga. Itulah sebabnya kami menyediakan layanan kesehatan premium dengan harga terjangkau, didukung oleh dokter hewan berpengalaman dan fasilitas kelas dunia. Kami tidak hanya menyembuhkan—kami merawat.
               </p>
               <div class="text-center">
                 <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -107,24 +108,27 @@
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
                     <i class="bi bi-clipboard-data"></i>
-                    <h4>Corporis voluptates officia eiusmod</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <h4>Pengobatan Terintegrasi</h4>
+                    <p>Kami menyediakan layanan kesehatan hewan yang terintegrasi, mulai dari pemeriksaan rutin, vaksinasi, hingga perawatan khusus penyakit kronis. 
+                      Tim dokter kami menggunakan pendekatan holistik untuk memastikan kesejahteraan hewan peliharaan Anda.</p>
                   </div>
                 </div><!-- End Icon Box -->
 
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
                     <i class="bi bi-gem"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>Teknologi Canggih</h4>
+                    <p>Dengan fasilitas laboratorium modern dan alat diagnostik terkini, kami mampu memberikan hasil tes medis akurat dalam waktu singkat. 
+                      Dari USG hingga PCR, setiap prosedur dilakukan dengan standar internasional.</p>
                   </div>
                 </div><!-- End Icon Box -->
 
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
                     <i class="bi bi-inboxes"></i>
-                    <h4>Labore consequatur incidid dolore</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                   <h4>Rekam medis Digital</h4>
+                    <p>Semua data kesehatan hewan Anda disimpan secara aman dalam sistem digital.
+                      Anda dapat mengakses riwayat perawatan, resep obat, dan catatan konsultasi kapan saja melalui platform kami.</p>
                   </div>
                 </div><!-- End Icon Box -->
 
@@ -237,8 +241,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Layanan</h2>
+        <p>Layanan kesehatan hewan terpercaya dengan dukungan dokter ahli dan sarana lengkap</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -251,9 +255,9 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                 <i class="fas fa-heartbeat"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Pemeriksaan Kesehatan Rutin</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Layanan pemeriksaan menyeluruh untuk deteksi dini masalah kesehatan hewan peliharaan Anda</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -263,9 +267,9 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                 <i class="fas fa-pills"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Vaksinasi & Imunisasi</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Memberikan vaksin lengkap sesuai usia dan jenis hewan guna mencegah berbagai penyakit menular dan berbahaya</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -275,9 +279,9 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                 <i class="fas fa-hospital-user"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Penanganan Gawat Darurat</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Layanan darurat 24/7 untuk kondisi serius seperti kecelakaan atau keracunan</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -287,9 +291,9 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                 <i class="fas fa-dna"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+                <h3>Perawatan Gigi & Kuku</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Membersihkan gigi, pemotongan kuku, dan perawatan kebersihan lainnya agar tetap sehat dan nyaman</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -300,9 +304,9 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                 <i class="fas fa-wheelchair"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+                <h3>Operasi & Bedah</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Prosedur medis dari yang ringan hingga kompleks, ditangani secara profesional dan steril</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -313,9 +317,9 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                 <i class="fas fa-notes-medical"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+                <h3>Konsultasi Nutrisi & Gizi</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Bantu Anda memilih makanan dan pola makan yang tepat untuk hewan peliharaan Anda</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -347,7 +351,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
               <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Haydar Ali Ayyubi</h4>
-                <span>011022</span>
+                <span>0110224176</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -377,7 +381,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
               <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Aurora Zalfa Hartono</h4>
-                <span></span>
+                <span>0110224057</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -392,8 +396,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
               <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Rumaisha</h4>
-                <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <span>0110224087</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
@@ -409,11 +412,10 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
               <div class="member-info">
                 <h4>M Faqih Rayya</h4>
                 <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -544,8 +546,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
                       <div>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
+                        <h3>Raffi Taj</h3>
+                        <h4>Programmer</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -553,7 +555,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                      <span>Maozza mengalami alergi kulit yang parah, dan setelah berkonsultasi dengan dokter di Medilab, kami diberikan solusi yang jelas dan terjangkau. Obatnya cepat efektif, dan stafnya sangat ramah. Medilab benar-benar peduli pada kesehatan hewan!</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -564,8 +566,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
                       <div>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
+                        <h3>Amarsya Aulia</h3>
+                        <h4>Pemilik Kucing Clara & Gismo</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -573,7 +575,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                      <span>Saya sangat bersyukur menemukan Medilab! Clara, kucing kesayangan saya, sempat sakit parah dan hampir tidak mau makan. Tim dokter di Medilab sangat sabar menjelaskan kondisinya dan memberikan perawatan yang tepat. Sekarang Momo sudah pulih total. Terima kasih, Medilab!"</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -584,8 +586,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
                       <div>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
+                        <h3>Nada Shabrina</h3>
+                        <h4>Pengusaha</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -593,7 +595,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                      <span>"Luna alergi makanan, dan Medilab membantu kami menemukan diet terbaik untuknya. Stafnya bahkan merekomendasikan produk makanan yang aman dan terjangkau. Pelayanan mereka benar-benar personal dan penuh perhatian. ❤️"</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -604,8 +606,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
                       <div>
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
+                        <h3>Jaya Sukma</h3>
+                        <h4>Pekerja Lepas</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -613,12 +615,11 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                      <span>Anjing saya sempat cedera otot sebelum perlombaan besar. Tim Medilab menggunakan teknologi fisioterapi canggih untuk mempercepat pemulihannya. Tanpa bantuan mereka, anjing saya tidak akan bisa bertanding. Medilab benar-benar luar biasa!"</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
                 </div><!-- End testimonial item -->
-
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
@@ -888,10 +889,6 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">VetPaw Clinic</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
