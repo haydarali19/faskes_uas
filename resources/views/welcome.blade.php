@@ -63,7 +63,7 @@
             <li><a href="#doctors">Doctors</a></li>
             <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Dashboard</a></li>
 
-            
+
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -91,7 +91,7 @@
         <div class="content row gy-4">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>Why Choose VetPaw Clinic?</h3>
+              <h3>Kenapa VetPaw Clinic?</h3>
               <p>
                 Di VetPaw Clinic, kami percaya bahwa hewan peliharaan adalah anggota keluarga yang berharga. Itulah sebabnya kami menyediakan layanan kesehatan premium dengan harga terjangkau, didukung oleh dokter hewan berpengalaman dan fasilitas kelas dunia. Kami tidak hanya menyembuhkan—kami merawat.
               </p>
@@ -109,7 +109,7 @@
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
                     <i class="bi bi-clipboard-data"></i>
                     <h4>Pengobatan Terintegrasi</h4>
-                    <p>Kami menyediakan layanan kesehatan hewan yang terintegrasi, mulai dari pemeriksaan rutin, vaksinasi, hingga perawatan khusus penyakit kronis. 
+                    <p>Kami menyediakan layanan kesehatan hewan yang terintegrasi, mulai dari pemeriksaan rutin, vaksinasi, hingga perawatan khusus penyakit kronis.
                       Tim dokter kami menggunakan pendekatan holistik untuk memastikan kesejahteraan hewan peliharaan Anda.</p>
                   </div>
                 </div><!-- End Icon Box -->
@@ -118,7 +118,7 @@
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
                     <i class="bi bi-gem"></i>
                     <h4>Teknologi Canggih</h4>
-                    <p>Dengan fasilitas laboratorium modern dan alat diagnostik terkini, kami mampu memberikan hasil tes medis akurat dalam waktu singkat. 
+                    <p>Dengan fasilitas laboratorium modern dan alat diagnostik terkini, kami mampu memberikan hasil tes medis akurat dalam waktu singkat.
                       Dari USG hingga PCR, setiap prosedur dilakukan dengan standar internasional.</p>
                   </div>
                 </div><!-- End Icon Box -->
@@ -190,6 +190,51 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
       </div>
 
     </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Specialist Doctors</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-flask"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Research Labs</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-award"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Years of Experience</p>
+            </div>
+          </div><!-- End Stats Item -->
+         <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+  <i class="fas fa-paw"></i>
+  <div class="stats-item">
+    <span data-purecounter-start="0" data-purecounter-end="2400" data-purecounter-duration="1" class="purecounter"></span>
+    <p>Treated Pets</p>
+  </div>
+</div>
+
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -292,79 +337,49 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
     <!-- Doctors Section -->
     <section id="doctors" class="doctors section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
         <h2>Doctors</h2>
-      </div><!-- End Section Title -->
+    </div><!-- End Section Title -->
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+        <div class="row gy-4 justify-content-center my-4">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+            <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
                 <h4>Haydar Ali Ayyubi</h4>
                 <span>0110224176</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/hydrrr19/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/haydar-ali-ayyubi-61342933b/"><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+            </div>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+            <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
                 <h4>Yanti Elnaya Putri</h4>
                 <span>0110224097</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.instagram.com/elnayaputri_?igsh=Yzk3ajMxMDF5N2Q4"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/yanti-elnaya-putri-6b6165331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="bi bi-linkedin"></i> </a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/elnayaputri_?igsh=Yzk3ajMxMDF5N2Q4"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yanti-elnaya-putri-6b6165331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Aurora Zalfa Hartono</h4>
-                <span>0110224057</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+        </div>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rumaisha</h4>
-                <span>0110224087</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+        <div class="row gy-4 justify-content-center my-0.8">
+        <div class="col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start justify-content-center">
+            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
                 <h4>M Faqih Rayya</h4>
                 <span>0110224212</span>
                 <div class="social">
@@ -372,25 +387,55 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                   <a href="https://www.instagram.com/__faqihryya?igsh=MXZjbGd5eHd3NW94NA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
-
+            </div>
+        </div>
         </div>
 
-      </div>
+        <div class="row gy-4 justify-content-center my-1">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+                <h4>Aurora Zalfa Hartono</h4>
+                <span>0110224057</span>
+                <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
 
-    </section><!-- /Doctors Section -->
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+                <h4>Rumaisha</h4>
+                <span>0110224087</span>
+                <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- /Doctors Section -->
 
     <!-- Faq Section -->
     <section id="faq" class="faq section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
+        <h2>FAQ</h2>
         <p>Kami menerima banyak pertanyaan dari para pemilik hewan peliharaan. Berikut adalah beberapa yang paling sering ditanyakan.
-
-</p>
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -471,8 +516,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
           <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
             <h3>Testimonials</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              Kami sangat menghargai setiap masukan dari pengguna kami. Berikut adalah beberapa pengalaman mereka bersama layanan kami.
             </p>
           </div>
 
@@ -580,8 +624,8 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
                       <div>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
+                        <h3>Aurora Zalfa</h3>
+                        <h4>Data Analyst</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -589,7 +633,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                      <span>Tim dokter di VetPaw Clinic sangat profesional dan sabar dalam menangani anjing saya yang sedang sakit. Mereka menjelaskan detail perawatan dengan jelas, dan harga terjangkau pula! Terima kasih telah menyelamatkan si Kiki!</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -613,7 +657,11 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
+<<<<<<< HEAD
         <p>Dokumentasi kegiatan dan layanan terbaik kami dalam merawat hewan kesayangan Anda</p>
+=======
+        <p>Lihat langsung bagaimana kami merawat anjing dan kucing dengan penuh dedikasi. Setiap momen di sini adalah bukti komitmen kami untuk memberikan perawatan terbaik bagi hewan peliharaan Anda.</p>
+>>>>>>> 5041f06ef776af732f828456926e855bb85d2bda
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -824,7 +872,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
             <li><a href="#">Senin – Jumat: 08.00 – 20.00</a></li>
             <li><a href="#">Sabtu: 08.00 – 16.00</a></li>
             <li><a href="#">Minggu & Tanggal Merah: Libur</a></li>
-            
+
           </ul>
         </div>
 
