@@ -63,7 +63,7 @@
             <li><a href="#doctors">Doctors</a></li>
             <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Dashboard</a></li>
 
-            
+
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -109,7 +109,7 @@
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
                     <i class="bi bi-clipboard-data"></i>
                     <h4>Pengobatan Terintegrasi</h4>
-                    <p>Kami menyediakan layanan kesehatan hewan yang terintegrasi, mulai dari pemeriksaan rutin, vaksinasi, hingga perawatan khusus penyakit kronis. 
+                    <p>Kami menyediakan layanan kesehatan hewan yang terintegrasi, mulai dari pemeriksaan rutin, vaksinasi, hingga perawatan khusus penyakit kronis.
                       Tim dokter kami menggunakan pendekatan holistik untuk memastikan kesejahteraan hewan peliharaan Anda.</p>
                   </div>
                 </div><!-- End Icon Box -->
@@ -118,7 +118,7 @@
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
                     <i class="bi bi-gem"></i>
                     <h4>Teknologi Canggih</h4>
-                    <p>Dengan fasilitas laboratorium modern dan alat diagnostik terkini, kami mampu memberikan hasil tes medis akurat dalam waktu singkat. 
+                    <p>Dengan fasilitas laboratorium modern dan alat diagnostik terkini, kami mampu memberikan hasil tes medis akurat dalam waktu singkat.
                       Dari USG hingga PCR, setiap prosedur dilakukan dengan standar internasional.</p>
                   </div>
                 </div><!-- End Icon Box -->
@@ -337,95 +337,96 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
     <!-- Doctors Section -->
     <section id="doctors" class="doctors section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
         <h2>Doctors</h2>
-      </div><!-- End Section Title -->
+    </div><!-- End Section Title -->
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+        <div class="row gy-4 justify-content-center my-4">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+            <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
                 <h4>Haydar Ali Ayyubi</h4>
                 <span>0110224176</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/hydrrr19/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/haydar-ali-ayyubi-61342933b/"><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+            </div>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+            <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
                 <h4>Yanti Elnaya Putri</h4>
                 <span>0110224097</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.instagram.com/elnayaputri_?igsh=Yzk3ajMxMDF5N2Q4"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/yanti-elnaya-putri-6b6165331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="bi bi-linkedin"></i> </a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/elnayaputri_?igsh=Yzk3ajMxMDF5N2Q4"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yanti-elnaya-putri-6b6165331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Aurora Zalfa Hartono</h4>
-                <span>0110224057</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+        </div>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rumaisha</h4>
-                <span>0110224087</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+        <div class="row gy-4 justify-content-center my-0.8">
+        <div class="col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start justify-content-center">
+            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
                 <h4>M Faqih Rayya</h4>
                 <span>Neurosurgeon</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
-
+            </div>
+        </div>
         </div>
 
-      </div>
+        <div class="row gy-4 justify-content-center my-1">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+                <h4>Aurora Zalfa Hartono</h4>
+                <span>0110224057</span>
+                <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
 
-    </section><!-- /Doctors Section -->
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+                <h4>Rumaisha</h4>
+                <span>0110224087</span>
+                <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- /Doctors Section -->
 
     <!-- Faq Section -->
     <section id="faq" class="faq section light-background">
@@ -434,8 +435,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
       <div class="container section-title" data-aos="fade-up">
         <h2>FAQ</h2>
         <p>Kami menerima banyak pertanyaan dari para pemilik hewan peliharaan. Berikut adalah beberapa yang paling sering ditanyakan.
-
-</p>
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -868,7 +868,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
             <li><a href="#">Senin – Jumat: 08.00 – 20.00</a></li>
             <li><a href="#">Sabtu: 08.00 – 16.00</a></li>
             <li><a href="#">Minggu & Tanggal Merah: Libur</a></li>
-            
+
           </ul>
         </div>
 

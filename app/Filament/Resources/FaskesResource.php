@@ -39,12 +39,6 @@ class FaskesResource extends Resource
                     ->required()
                     ->maxLength(100),
 
-                // TextInput::make('website')
-                //     ->label('Website')
-                //     ->url()
-                //     ->maxLength(45)
-                //     ->nullable(),
-
                 TextInput::make('email')
                     ->email()
                     ->maxLength(45)

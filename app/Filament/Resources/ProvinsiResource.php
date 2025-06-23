@@ -19,6 +19,21 @@ class ProvinsiResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-map';
 
+        public static function getModelLabel(): string
+    {
+        return 'Provinsi';
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return 'Provinsi';
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return 'Provinsi';
+    }
+
     public static function form(Form $form): Form
     {
         return $form

@@ -22,6 +22,21 @@ class KabkotaResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-map';
 
+    public static function getModelLabel(): string
+    {
+        return 'Kabupaten Kota';
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return 'Kabupaten Kota';
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return 'Kabupaten Kota';
+    }
+
     public static function form(Form $form): Form
     {
         return $form
