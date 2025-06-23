@@ -150,7 +150,7 @@
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+            <a href="https://youtu.be/vTFp0jwA-94?si=7LW86PRSC4lT2ZlL" class="glightbox pulsating-play-btn"></a>
           </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
@@ -366,10 +366,10 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
               <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>M Faqih Rayya</h4>
-                <span>Neurosurgeon</span>
+                <span>0110224212</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/__faqihryya?igsh=MXZjbGd5eHd3NW94NA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -613,7 +613,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Dokumentasi kegiatan dan layanan terbaik kami dalam merawat hewan kesayangan Anda</p>
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
