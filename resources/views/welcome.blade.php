@@ -378,7 +378,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
         <div class="row gy-4 justify-content-center my-0.8">
         <div class="col-lg-6 col-md-8" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start justify-content-center">
-            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="assets/img/doctors/doctors-5.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
                 <h4>M Faqih Rayya</h4>
                 <span>0110224212</span>
@@ -657,11 +657,7 @@ Kami memahami bahwa hewan peliharaan adalah bagian dari keluarga. Oleh karena it
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
-<<<<<<< HEAD
-        <p>Dokumentasi kegiatan dan layanan terbaik kami dalam merawat hewan kesayangan Anda</p>
-=======
-        <p>Lihat langsung bagaimana kami merawat anjing dan kucing dengan penuh dedikasi. Setiap momen di sini adalah bukti komitmen kami untuk memberikan perawatan terbaik bagi hewan peliharaan Anda.</p>
->>>>>>> 5041f06ef776af732f828456926e855bb85d2bda
+        <p>Lihat langsung bagaimana kami merawat anjing dan kucing dengan penuh dedikasi. Setiap momen di sini adalah bukti komitmen kami untuk memberikan perawatan terbaik bagi hewan peliharaan Anda.</p>
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
