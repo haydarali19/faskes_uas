@@ -61,7 +61,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#doctors">Doctors</a></li>
-            <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Dashboard</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('/admin') }}">Login</a></li>
 
 
             <li><a href="#contact">Contact</a></li>

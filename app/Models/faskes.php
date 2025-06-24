@@ -20,6 +20,7 @@ class Faskes extends Model
         'longitude',
         'kabkota_id',
         'jenis_faskes_id',
+        'gambar',
         'kategori_id',
     ];
 

@@ -2,62 +2,46 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\KabkotaResource\Pages;
-use App\Models\Kabkota;
+use App\Filament\Resources\UserResource\Pages;
+use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Select;
-use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 
-class KabkotaResource extends Resource
+class UserResource extends Resource
 {
-    protected static ?string $model = Kabkota::class;
-    protected static ?string $navigationIcon = 'heroicon-o-map';
+    protected static ?string $model = User::class;
 
-    public static function getModelLabel(): string
-    {
-        return 'Kabupaten Kota';
-    }
-
-    public static function getPluralLabel(): string
-    {
-        return 'Kabupaten Kota';
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return 'Kabupaten Kota';
-    }
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TextInput::make('nama')
-                    ->label('Nama Kab/Kota')
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-
-                TextInput::make('latitude')
-                    ->label('Latitude')
+                Forms\Components\TextInput::make('email')
+                    ->email()
                     ->required()
-                    ->numeric(),
-
-                TextInput::make('longitude')
-                    ->label('Longitude')
+                    ->unique(ignoreRecord: true)
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('password')
+                    ->password()
                     ->required()
-                    ->numeric(),
-
-                Select::make('provinsi_id')
-                    ->label('Provinsi')
-                    ->relationship('provinsi', 'nama')
-                    ->searchable()
+                    ->maxLength(255)
+                    ->revealable(),
+                Forms\Components\Select::make('role')
+                    ->options([
+                        'dokter' => 'Dokter',
+                        'pegawai' => 'Pegawai',
+                        'admin' => 'Admin',
+                    ])
+                    ->default('admin')
                     ->required(),
             ]);
     }
@@ -66,24 +50,14 @@ class KabkotaResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('nama')
-                    ->label('Nama Kab/Kota')
-                    ->searchable()
-                    ->sortable(),
-
-                TextColumn::make('latitude')
-                    ->label('Latitude'),
-
-                TextColumn::make('longitude')
-                    ->label('Longitude'),
-
-                TextColumn::make('provinsi.nama')
-                    ->label('Provinsi')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('name')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('email')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('role')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('created_at')->dateTime()->sortable(),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -100,13 +74,12 @@ class KabkotaResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListKabkotas::route('/'),
-            'create' => Pages\CreateKabkota::route('/create'),
-            'edit' => Pages\EditKabkota::route('/{record}/edit'),
+            'index' => Pages\ListUsers::route('/'),
+            'create' => Pages\CreateUser::route('/create'),
+            'edit' => Pages\EditUser::route('/{record}/edit'),
         ];
     }
 
-    // Role-based permissions: hanya admin
     public static function canViewAny(): bool
     {
         return Auth::check() && Auth::user()->role === 'admin';

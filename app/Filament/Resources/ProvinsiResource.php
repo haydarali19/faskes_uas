@@ -3,15 +3,16 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ProvinsiResource\Pages;
-use App\Filament\Resources\ProvinsiResource\RelationManagers;
 use App\Models\Provinsi;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\TextColumn;
 
 class ProvinsiResource extends Resource
 {
@@ -19,7 +20,7 @@ class ProvinsiResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-map';
 
-        public static function getModelLabel(): string
+    public static function getModelLabel(): string
     {
         return 'Provinsi';
     }
@@ -38,22 +39,22 @@ class ProvinsiResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('nama')
+                TextInput::make('nama')
                     ->label('Nama Provinsi')
                     ->required()
                     ->maxLength(255),
 
-                Forms\Components\TextInput::make('ibukota')
+                TextInput::make('ibukota')
                     ->label('Ibukota')
                     ->required()
                     ->maxLength(255),
 
-                Forms\Components\TextInput::make('latitude')
+                TextInput::make('latitude')
                     ->label('Latitude')
                     ->numeric()
                     ->required(),
 
-                Forms\Components\TextInput::make('longitude')
+                TextInput::make('longitude')
                     ->label('Longitude')
                     ->numeric()
                     ->required(),
@@ -64,35 +65,10 @@ class ProvinsiResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('nama')
-                    ->label('Nama Provinsi')
-                    ->searchable()
-                    ->sortable(),
-
-                Tables\Columns\TextColumn::make('ibukota')
-                    ->label('Ibukota')
-                    ->searchable()
-                    ->sortable(),
-
-                Tables\Columns\TextColumn::make('latitude')
-                    ->label('Latitude'),
-
-                Tables\Columns\TextColumn::make('longitude')
-                    ->label('Longitude'),
-            ])
-            ->filters([
-                //
-            ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
-            ])
-            ->filters([
-                //
+                TextColumn::make('nama')->label('Nama Provinsi')->searchable()->sortable(),
+                TextColumn::make('ibukota')->label('Ibukota')->searchable()->sortable(),
+                TextColumn::make('latitude')->label('Latitude'),
+                TextColumn::make('longitude')->label('Longitude'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
@@ -106,9 +82,7 @@ class ProvinsiResource extends Resource
 
     public static function getRelations(): array
     {
-        return [
-            //
-        ];
+        return [];
     }
 
     public static function getPages(): array
@@ -118,5 +92,35 @@ class ProvinsiResource extends Resource
             'create' => Pages\CreateProvinsi::route('/create'),
             'edit' => Pages\EditProvinsi::route('/{record}/edit'),
         ];
+    }
+
+    public static function canViewAny(): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canView(Model $record): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canCreate(): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canEdit(Model $record): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canDelete(Model $record): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
     }
 }

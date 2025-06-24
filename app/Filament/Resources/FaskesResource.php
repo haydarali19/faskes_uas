@@ -16,6 +16,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
 
 class FaskesResource extends Resource
 {
@@ -66,6 +68,16 @@ class FaskesResource extends Resource
                     ->required()
                     ->label('Jenis Faskes'),
 
+                Forms\Components\FileUpload::make('gambar')
+                    ->label('Gambar Faskes')
+                    ->image()
+                    ->directory('Fakes-images')
+                    ->disk('public')
+                    ->imagePreviewHeight('200')
+                    ->previewable()
+                    ->downloadable()
+                    ->required(),
+
                 Select::make('kategori_id')
                     ->relationship('kategori', 'nama')
                     ->required()
@@ -87,6 +99,10 @@ class FaskesResource extends Resource
                 TextColumn::make('longitude'),
                 TextColumn::make('kabupatenKota.nama')->label('Kab/Kota'),
                 TextColumn::make('jenisFaskes.nama')->label('Jenis Faskes'),
+                Tables\Columns\ImageColumn::make('gambar')
+                    ->label('Foto')
+                    ->disk('public')
+                    ->circular(),
                 TextColumn::make('kategori.nama')->label('Kategori'),
             ])
             ->filters([])
@@ -98,6 +114,36 @@ class FaskesResource extends Resource
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
+    }
+
+    public static function canViewAny(): bool
+    {
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'pegawai','dokter']);
+    }
+
+    public static function canView(Model $record): bool
+    {
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'pegawai', 'dokter']);
+    }
+
+    public static function canCreate(): bool
+    {
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'dokter']);
+    }
+
+    public static function canEdit(Model $record): bool
+    {
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'dokter']);
+    }
+
+    public static function canDelete(Model $record): bool
+    {
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'dokter']);
+    }
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'pegawai', 'dokter']);
     }
 
     public static function getRelations(): array

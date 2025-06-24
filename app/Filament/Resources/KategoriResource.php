@@ -3,15 +3,16 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\KategoriResource\Pages;
-use App\Filament\Resources\KategoriResource\RelationManagers;
 use App\Models\Kategori;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
 
 class KategoriResource extends Resource
 {
@@ -19,42 +20,40 @@ class KategoriResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-bookmark';
 
-        public static function getModelLabel(): string
+    public static function getModelLabel(): string
     {
-        return 'Katagori';
+        return 'Kategori';
     }
 
     public static function getPluralLabel(): string
     {
-        return 'Katagori';
+        return 'Kategori';
     }
 
     public static function getNavigationLabel(): string
     {
-        return 'Katagori';
+        return 'Kategori';
     }
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                \Filament\Forms\Components\TextInput::make('nama')
-                    ->label('Nama Kategori')
-                    ->required()
-                    ->maxLength(255),
-            ]);
+        return $form->schema([
+            TextInput::make('nama')
+                ->label('Nama Kategori')
+                ->required()
+                ->maxLength(255),
+        ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                \Filament\Tables\Columns\TextColumn::make('nama')
+                TextColumn::make('nama')
                     ->label('Nama Kategori')
                     ->sortable()
                     ->searchable(),
             ])
-            ->filters([])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
@@ -77,5 +76,36 @@ class KategoriResource extends Resource
             'create' => Pages\CreateKategori::route('/create'),
             'edit' => Pages\EditKategori::route('/{record}/edit'),
         ];
+    }
+
+    // Hanya admin yang bisa akses
+    public static function canViewAny(): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canView(Model $record): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canCreate(): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canEdit(Model $record): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function canDelete(Model $record): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
+    }
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return Auth::check() && Auth::user()->role === 'admin';
     }
 }

@@ -23,6 +23,7 @@ return new class extends Migration
             $table->double('longitude')->nullable();
             $table->unsignedBigInteger('kabkota_id');
             $table->unsignedBigInteger('jenis_faskes_id');
+            $table->string('gambar')->nullable();
             $table->foreign('kabkota_id')->references('id')->on('kabkotas')->onDelete('cascade');
             $table->foreign('jenis_faskes_id')->references('id')->on('jenis_faskes')->onDelete('cascade');
             $table->timestamps();
