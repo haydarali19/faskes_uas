@@ -32,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->passwordReset()
             ->profile()
+            ->registration()
             ->login()
             ->colors([
                 'primary' => Color::Amber,
@@ -101,17 +102,20 @@ class AdminPanelProvider extends PanelProvider
                         ]);
                 }
 
-                // Dokter: kelola data faskes
-                if ($user->role === 'dokter') {
+                // petugas: kelola data faskes
+                if ($user->role === 'petugas') {
                     $groups[] = NavigationGroup::make('Data Saya')->items([
                         NavigationItem::make('Faskes')
                             ->icon('heroicon-o-building-office')
                             ->url(route('filament.admin.resources.faskes.index')),
+                        NavigationItem::make('Jenis Faskes')
+                            ->icon('heroicon-o-rectangle-stack')
+                            ->url(route('filament.admin.resources.jenis-faskes.index')),
                     ]);
                 }
 
-                // Pegawai: hanya melihat faskes
-                if ($user->role === 'pegawai') {
+                // masyarakat: hanya melihat faskes
+                if ($user->role === 'masyarakat') {
                     $groups[] = NavigationGroup::make('Informasi')->items([
                         NavigationItem::make('Lihat Faskes')
                             ->icon('heroicon-o-eye')

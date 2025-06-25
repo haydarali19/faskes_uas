@@ -65,31 +65,31 @@ class JenisFaskesResource extends Resource
     // Hanya role admin yang bisa akses
     public static function canViewAny(): bool
     {
-        return Auth::check() && Auth::user()->role === 'admin';
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function canView(Model $record): bool
     {
-        return Auth::check() && Auth::user()->role === 'admin';
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function canCreate(): bool
     {
-        return Auth::check() && Auth::user()->role === 'admin';
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function canEdit(Model $record): bool
     {
-        return Auth::check() && Auth::user()->role === 'admin';
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function canDelete(Model $record): bool
     {
-        return Auth::check() && Auth::user()->role === 'admin';
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function shouldRegisterNavigation(): bool
     {
-        return Auth::check() && Auth::user()->role === 'admin';
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 }

@@ -21,16 +21,16 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('admin123'),
         ]);
         User::factory()->create([
-            'name' => 'dokter',
-            'email' => 'dokter@gmail.com',
-            'role' => 'dokter',
-            'password' => bcrypt('dokter123'),
+            'name' => 'petugas',
+            'email' => 'petugas@gmail.com',
+            'role' => 'petugas',
+            'password' => bcrypt('petugas123'),
         ]);
         User::factory()->create([
-            'name' => 'pegawai',
-            'email' => 'pegawai@gmail.com',
-            'role' => 'pegawai',
-            'password' => bcrypt('pegawai123'),
+            'name' => 'masyarakat',
+            'email' => 'masyarakat@gmail.com',
+            'role' => 'masyarakat',
+            'password' => bcrypt('masyarakat123'),
         ]);
     }
 }

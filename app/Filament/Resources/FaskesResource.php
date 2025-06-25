@@ -118,32 +118,32 @@ class FaskesResource extends Resource
 
     public static function canViewAny(): bool
     {
-        return Auth::check() && in_array(Auth::user()->role, ['admin', 'pegawai','dokter']);
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'masyarakat','petugas']);
     }
 
     public static function canView(Model $record): bool
     {
-        return Auth::check() && in_array(Auth::user()->role, ['admin', 'pegawai', 'dokter']);
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'masyarakat', 'petugas']);
     }
 
     public static function canCreate(): bool
     {
-        return Auth::check() && in_array(Auth::user()->role, ['admin', 'dokter']);
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function canEdit(Model $record): bool
     {
-        return Auth::check() && in_array(Auth::user()->role, ['admin', 'dokter']);
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function canDelete(Model $record): bool
     {
-        return Auth::check() && in_array(Auth::user()->role, ['admin', 'dokter']);
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'petugas']);
     }
 
     public static function shouldRegisterNavigation(): bool
     {
-        return Auth::check() && in_array(Auth::user()->role, ['admin', 'pegawai', 'dokter']);
+        return Auth::check() && in_array(Auth::user()->role, ['admin', 'masyarakat', 'petugas']);
     }
 
     public static function getRelations(): array
